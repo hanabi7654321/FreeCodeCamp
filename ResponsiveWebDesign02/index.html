@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+
+    <h1 id="title">お問合せフォーム</h1>
+    <p id="discription">必要事項をご記入の上、送信ボタンを押してください。</p>
+      
+      <hr>
+    
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name" >お名前(name)</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="例）山田太郎"required>
+      </div>
+      
+      <div class="form-group">
+        <label id="email-label" for="email" >Eメール(e-mail)</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="例）taro@gmail.com"required>
+      </div>
+      
+      <div class="form-group">
+        <label id="number-label" for="number" >年齢(age)</label>
+        <input type="number" name="age" id="number" min="10" max="99"  class="form-control" placeholder="数字をお選びください" required>                  
+      </div>
+      
+      <div class="form-group">
+        <p>当サイトを何で知りましたか？</p>
+        <select id="dropdown" name="way" class="form-control" required>
+          <option value="" hidden>お選びください </option>
+          <option value="google">Google</option>
+          <option value="twitter">Twitter</option>
+          <option value="facebook">Facebook</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <p>ご希望のプレゼントをひとつお選びください</p>
+        <label>
+          <input name="present" value="apple watch" type="radio" class="input-radio" checked> Apple watch
+        </label>
+         <label>
+          <input name="present" value="i-phone12" type="radio" class="input-radio" > i-phone12
+        </label>
+         <label>
+          <input name="present" value="Nintendo Switch" type="radio" class="input-radio" > Nintendo Switch
+        </label> 
+      </div>
+      
+      <div class="form-group">
+        <p>ご意見、ご感想などあれば、ご自由にお書きください。</p>
+        <textarea id="comment" name="comment" class="input-textarea" placeholder="こちらにコメントをお書きください"></textarea>      
+      </div>
+      
+       <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+        送信     
+      </div>
+      
+      
+      
+    </form>
+      
+    </div>
+    </body>
+  
+</body>
+</html>
